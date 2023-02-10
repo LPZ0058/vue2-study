@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-10T05:53:40.901Z",
+    "end": "2023-02-10T05:53:40.910Z",
+    "duration": 9,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "beef0a03-a72c-465f-b282-ceba75503b97",
+      "title": "",
+      "fullFile": "E:\\NodeProject\\vue\\vue2\\src\\tests\\Observice.spec.ts",
+      "file": "\\src\\tests\\Observice.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d953c1a0-0951-41b2-87fe-7ffe84901065",
+          "title": "测试Observice",
+          "fullFile": "E:\\NodeProject\\vue\\vue2\\src\\tests\\Observice.spec.ts",
+          "file": "\\src\\tests\\Observice.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "de3b393e-cdcf-4857-be66-d3cf87ea9976",
+              "title": "测试Observice的构造函数",
+              "fullFile": "E:\\NodeProject\\vue\\vue2\\src\\tests\\Observice.spec.ts",
+              "file": "\\src\\tests\\Observice.spec.ts",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "constarctor",
+                  "fullTitle": "测试Observice 测试Observice的构造函数 constarctor",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const obj = { a: 15 };\nlet observice = new Observice_1.default(obj);\nconst observedObj = observice.value;\nlet watcher = new Watcher_1.default(observedObj, 'a', (newValue, oldValue) => {\n    (0, chai_1.expect)(oldValue).to.be.equal(15);\n    (0, chai_1.expect)(newValue).to.be.equal(10);\n});\nobj.a = 10;",
+                  "err": {},
+                  "uuid": "7e644332-465c-478b-a839-6ffc82c75ef5",
+                  "parentUUID": "de3b393e-cdcf-4857-be66-d3cf87ea9976",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "7e644332-465c-478b-a839-6ffc82c75ef5"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
