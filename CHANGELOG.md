@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/LPZ0058/vue2-study/compare/v1.1.0...v1.14.0) (2023-02-10)
+
+
+### Features
+
+* 1.添加standard-version自动生成日志 2. 使用webpack打包ts，跑通浏览器使用mocha进行测试 ([d5ef2da](https://github.com/LPZ0058/vue2-study/commit/d5ef2dabde932cf0cd9c986e4c01e5bafa2011b9))
+
 ## [1.13.0](https://github.com/LPZ0058/vue2-study/compare/v1.1.0...v1.13.0) (2023-02-10)
 
 
