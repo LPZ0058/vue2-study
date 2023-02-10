@@ -19,3 +19,5 @@ describe('测试Observice', function() {
     })
   })
 })
+
+export {}
