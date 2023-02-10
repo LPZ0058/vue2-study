@@ -2,14 +2,17 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@commitlint/cz-commitlint": "^17.4.2",
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
     "chai": "^4.3.7",
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^6.3.0",
+    "husky": "^8.0.0",
     "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
-    "husky": "^8.0.0"
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "ts-node": "^10.9.1"
@@ -29,7 +32,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./src/tests/*.spec.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cz": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   },
   "author": "",
   "license": "ISC"

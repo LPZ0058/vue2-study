@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-10T05:53:40.901Z",
-    "end": "2023-02-10T05:53:40.910Z",
-    "duration": 9,
+    "start": "2023-02-10T10:05:22.143Z",
+    "end": "2023-02-10T10:05:22.150Z",
+    "duration": 7,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "beef0a03-a72c-465f-b282-ceba75503b97",
+      "uuid": "c6cb0cd1-3354-4711-b669-19a98fb5641b",
       "title": "",
       "fullFile": "E:\\NodeProject\\vue\\vue2\\src\\tests\\Observice.spec.ts",
       "file": "\\src\\tests\\Observice.spec.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d953c1a0-0951-41b2-87fe-7ffe84901065",
+          "uuid": "697fa83d-627f-4a75-b043-9b18af043ff5",
           "title": "测试Observice",
           "fullFile": "E:\\NodeProject\\vue\\vue2\\src\\tests\\Observice.spec.ts",
           "file": "\\src\\tests\\Observice.spec.ts",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "de3b393e-cdcf-4857-be66-d3cf87ea9976",
+              "uuid": "6612bda1-9bd6-460d-bb4f-a7c3987812c3",
               "title": "测试Observice的构造函数",
               "fullFile": "E:\\NodeProject\\vue\\vue2\\src\\tests\\Observice.spec.ts",
               "file": "\\src\\tests\\Observice.spec.ts",
@@ -56,15 +56,15 @@
                   "context": null,
                   "code": "const obj = { a: 15 };\nlet observice = new Observice_1.default(obj);\nconst observedObj = observice.value;\nlet watcher = new Watcher_1.default(observedObj, 'a', (newValue, oldValue) => {\n    (0, chai_1.expect)(oldValue).to.be.equal(15);\n    (0, chai_1.expect)(newValue).to.be.equal(10);\n});\nobj.a = 10;",
                   "err": {},
-                  "uuid": "7e644332-465c-478b-a839-6ffc82c75ef5",
-                  "parentUUID": "de3b393e-cdcf-4857-be66-d3cf87ea9976",
+                  "uuid": "f24b3999-2a83-4f62-85ac-29093615c98a",
+                  "parentUUID": "6612bda1-9bd6-460d-bb4f-a7c3987812c3",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "7e644332-465c-478b-a839-6ffc82c75ef5"
+                "f24b3999-2a83-4f62-85ac-29093615c98a"
               ],
               "failures": [],
               "pending": [],
