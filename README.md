@@ -9,8 +9,14 @@
 选择commitlint对Git的提交信息进行校验（要符合约定式提交）
 选择commitizen注入提交信息，并用cz-customizable自定义git cz的注入内容
 
-**使用Standard Version去自动生成变更日志**
+**日志变更**
 
+选择Standard Version去自动变更日志（挂到 post-commit钩子上）
+
+
+**检查测试覆盖率**
+
+选择Istabul检查代码覆盖率
 
 
 
