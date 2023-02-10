@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.32.0](https://github.com/LPZ0058/vue2-study/compare/v1.9.0...v1.32.0) (2023-02-10)
+
+
+### Features
+
+* 1.webpack整合浏览器环境测试 2.增加覆盖率检测 ([f616401](https://github.com/LPZ0058/vue2-study/commit/f61640111748d22665d317a28b5b6f63f9b0b0a2))
+
 ## [1.31.0](https://github.com/LPZ0058/vue2-study/compare/v1.9.0...v1.31.0) (2023-02-10)
 
 
