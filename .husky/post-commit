@@ -2,8 +2,14 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 commit_head=$(git log --pretty=format:"%s" -1)
-commit_head_msg=${commit_head:0:14}
+commit_head_msg=${commit_head:0:15}
 
-echo $commit_head_msg
+if [ $commit_head != $commit_head ]
+then
+  # 不是standard version提交的，可以生成日志
+  npm run update:log
+  echo "运行了npm run update:log"
+else
+  echo "没运行npm run update:log"
+fi
 
-echo "333333333"
