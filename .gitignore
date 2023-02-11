@@ -2,3 +2,4 @@
 /node_modules
 /mochawesome-report
 /.nyc_output
+/dist
