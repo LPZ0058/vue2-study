@@ -1,3 +1,13 @@
+<!--
+ * @Author: 蓝胖子007 1829390613@qq.com
+ * @Date: 2023-02-10 19:10:17
+ * @LastEditors: 蓝胖子007 1829390613@qq.com
+ * @LastEditTime: 2023-02-11 10:29:54
+ * @FilePath: \vue\vue2\note.md
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+-->
 **遇到的问题**
 
 1. ts中window报错，找不到的问题：修改tsconfig.ts 将配置项lib加上个dom，如："lib": ["es6", "dom"]
@@ -84,3 +94,4 @@
    1.  git rm --cached readme1.txt 删除readme1.txt的跟踪，并保留在本地
    2.  git rm -r --cached dir1  删除dir1目录，并保留在本地
    3.  git rm --f readme1.txt 删除readme1.txt的跟踪，并且删除本地文件
+10. 不要设置git回车转换，start-version在git操作时，如果配置文件（如package.json）的空格转换了，start-vesion会进行一次提交，但是提交的时候又会转换，于是循环提交....
