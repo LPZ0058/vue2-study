@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.39.39](https://github.com/LPZ0058/vue2-study/compare/v1.39.38...v1.39.39) (2023-02-11)
+
+
+### Bug Fixes
+
+* 尝试修复日志生成的bug ([109c7b9](https://github.com/LPZ0058/vue2-study/commit/109c7b95f6fff79cf9227a070a89f75714e8e9f2))
+* chore(release): ([fa6caa0](https://github.com/LPZ0058/vue2-study/commit/fa6caa0a17fd3964c14bc2f934779c9e663fc864))
+* fix: 尝试修复日志生成的bug ([d7d86ae](https://github.com/LPZ0058/vue2-study/commit/d7d86aeeeebb78c350e044c6148eeaccc2930d60))
+* fix: fix: fix: 尝试修复日志生成的bug ([5f0b23d](https://github.com/LPZ0058/vue2-study/commit/5f0b23dbbca93691589247a55fb5e03d9dfd4723))
+* fix: fix: fix: fix: 尝试修复日志生成的bug ([39e3ecc](https://github.com/LPZ0058/vue2-study/commit/39e3ecc4c06262270b8dcfe048f90219ca45a915))
+* fix: fix: fix: fix: fix: 尝试修复日志生成的bug ([1d81ac8](https://github.com/LPZ0058/vue2-study/commit/1d81ac8b13c5f0acd6391f625f8fe3dfa2a46885))
+* fix: fix: fix: fix: fix: fix: 尝试修复日志生成的bug ([15be924](https://github.com/LPZ0058/vue2-study/commit/15be924cffd82d7d6fbad9739449c776f5ddb2b0))
+
 ### [1.39.38](https://github.com/LPZ0058/vue2-study/compare/v1.39.30...v1.39.38) (2023-02-11)
 
 ### [1.39.37](https://github.com/LPZ0058/vue2-study/compare/v1.39.30...v1.39.37) (2023-02-11)
