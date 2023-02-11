@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 commit_head=$(git log --pretty=format:"%s" -1)
-commit_head_msg=${commit_head:1:14}
+commit_head_msg=${commit_head:0:14}
 
 echo $commit_head_msg
 
