@@ -33,7 +33,7 @@
   },
   "name": "vue2-study",
   "description": "<!--\r  * @Author: 蓝胖子007 1829390613@qq.com\r  * @Date: 2023-02-09 20:35:44\r  * @LastEditors: 蓝胖子007 1829390613@qq.com\r  * @LastEditTime: 2023-02-10 12:22:42\r  * @FilePath: \\vue\\vue2\\README.md\r  * @Description: \r  * \r  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. \r -->\r **测试**",
-  "version": "1.39.111",
+  "version": "1.39.112",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha ./src/tests/*.spec.ts",
