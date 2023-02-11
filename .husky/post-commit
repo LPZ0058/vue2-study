@@ -1,10 +1,20 @@
+###
+ # @Author: 蓝胖子007 1829390613@qq.com
+ # @Date: 2023-02-11 14:23:59
+ # @LastEditors: 蓝胖子007 1829390613@qq.com
+ # @LastEditTime: 2023-02-11 14:27:29
+ # @FilePath: \vue2\.husky\post-commit
+ # @Description:
+ #
+ # Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
+###
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
 
 commit_head=$(git log --pretty=format:"%s" -1)
 commit_head_msg=${commit_head:0:15}
-commit_ignore_msg="chore(release):"
+commit_ignore_msg='chore(release):'
 
 
 if [[ "$commit_head_msg" != "$commit_ignore_msg" ]]

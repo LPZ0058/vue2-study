@@ -4,11 +4,11 @@
  * @LastEditors: 蓝胖子007 1829390613@qq.com
  * @LastEditTime: 2023-02-10 13:12:34
  * @FilePath: \vue\vue2\src\Watcher.ts
- * @Description: 
- * 
- * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+ * @Description:
+ *
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
-/// <reference path = "./types/global.d.ts" /> 
+/// <reference path = "./types/global.d.ts" />
 import parsePath from './utils/parsePath';
 // import './types/global.d.ts';
 
@@ -31,9 +31,9 @@ export default class Watcher {
   // getter返回的值
   value: any
 
-  
+
   /**
-   * @description: 
+   * @description:
    * @param {*} vm 要监听的响应式对象
    * @param {*} expOrFn 要监视的属性的路径
    * @param {*} cb  对应的回调函数
@@ -47,7 +47,7 @@ export default class Watcher {
   }
   get() {
     window.target = this
-    let value = this.getter?.call(this.vm, this.vm)
+    const value = this.getter?.call(this.vm, this.vm)
     window.target = undefined
     return value
   }

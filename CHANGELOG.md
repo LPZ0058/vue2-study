@@ -2,6 +2,199 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.40.0](https://github.com/LPZ0058/vue2-study/compare/v1.39.117...v1.40.0) (2023-02-11)
+
+
+### Features
+
+* 增加ESLint检查typescript代码 ([118ef62](https://github.com/LPZ0058/vue2-study/commit/118ef629fb5bda9218230b3f4b7c71f916efe577))
+
+### [1.39.117](https://github.com/LPZ0058/vue2-study/compare/v1.39.116...v1.39.117) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复了bug ([cc8dde1](https://github.com/LPZ0058/vue2-study/commit/cc8dde1137a42603abfa4a088efe6005caad71e7))
+
+### [1.39.116](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.116) (2023-02-11)
+
+### [1.39.115](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.115) (2023-02-11)
+
+### [1.39.114](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.114) (2023-02-11)
+
+### [1.39.113](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.113) (2023-02-11)
+
+### [1.39.112](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.112) (2023-02-11)
+
+### [1.39.111](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.111) (2023-02-11)
+
+### [1.39.109](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.109) (2023-02-11)
+
+### [1.39.108](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.108) (2023-02-11)
+
+### [1.39.107](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.107) (2023-02-11)
+
+### [1.39.106](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.106) (2023-02-11)
+
+### [1.39.105](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.105) (2023-02-11)
+
+### [1.39.104](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.104) (2023-02-11)
+
+### [1.39.103](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.103) (2023-02-11)
+
+### [1.39.102](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.102) (2023-02-11)
+
+### [1.39.101](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.101) (2023-02-11)
+
+### [1.39.100](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.100) (2023-02-11)
+
+### [1.39.99](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.99) (2023-02-11)
+
+### [1.39.98](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.98) (2023-02-11)
+
+### [1.39.97](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.97) (2023-02-11)
+
+### [1.39.96](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.96) (2023-02-11)
+
+### [1.39.95](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.95) (2023-02-11)
+
+### [1.39.94](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.94) (2023-02-11)
+
+### [1.39.93](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.93) (2023-02-11)
+
+### [1.39.92](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.92) (2023-02-11)
+
+### [1.39.91](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.91) (2023-02-11)
+
+### [1.39.90](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.90) (2023-02-11)
+
+### [1.39.89](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.89) (2023-02-11)
+
+### [1.39.88](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.88) (2023-02-11)
+
+### [1.39.87](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.87) (2023-02-11)
+
+### [1.39.86](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.86) (2023-02-11)
+
+### [1.39.85](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.85) (2023-02-11)
+
+### [1.39.84](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.84) (2023-02-11)
+
+### [1.39.83](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.83) (2023-02-11)
+
+### [1.39.82](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.82) (2023-02-11)
+
+### [1.39.81](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.81) (2023-02-11)
+
+### [1.39.80](https://github.com/LPZ0058/vue2-study/compare/v1.39.78...v1.39.80) (2023-02-11)
+
+### [1.39.79](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.79) (2023-02-11)
+
+### [1.39.78](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.78) (2023-02-11)
+
+### [1.39.77](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.77) (2023-02-11)
+
+### [1.39.76](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.76) (2023-02-11)
+
+### [1.39.75](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.75) (2023-02-11)
+
+### [1.39.74](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.74) (2023-02-11)
+
+### [1.39.73](https://github.com/LPZ0058/vue2-study/compare/v1.39.70...v1.39.73) (2023-02-11)
+
+### [1.39.72](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.72) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.71](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.71) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.70](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.70) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.69](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.69) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.68](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.68) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.67](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.67) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.66](https://github.com/LPZ0058/vue2-study/compare/v1.39.61...v1.39.66) (2023-02-11)
+
+
+### Bug Fixes
+
+* 修复合并前面的commit ([4c076bb](https://github.com/LPZ0058/vue2-study/commit/4c076bb5a1313e151af1d4b18e8c2fae6a57e442))
+
+### [1.39.65](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.65) (2023-02-11)
+
+### [1.39.64](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.64) (2023-02-11)
+
+### [1.39.63](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.63) (2023-02-11)
+
+### [1.39.62](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.62) (2023-02-11)
+
+### [1.39.61](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.61) (2023-02-11)
+
+### [1.39.60](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.60) (2023-02-11)
+
+### [1.39.59](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.59) (2023-02-11)
+
+### [1.39.58](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.58) (2023-02-11)
+
+### [1.39.57](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.57) (2023-02-11)
+
+### [1.39.56](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.56) (2023-02-11)
+
+### [1.39.55](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.55) (2023-02-11)
+
+### [1.39.54](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.54) (2023-02-11)
+
+### [1.39.53](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.53) (2023-02-11)
+
+### [1.39.52](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.52) (2023-02-11)
+
+### [1.39.51](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.51) (2023-02-11)
+
+### [1.39.50](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.50) (2023-02-11)
+
+### [1.39.49](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.49) (2023-02-11)
+
+### [1.39.48](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.48) (2023-02-11)
+
+### [1.39.47](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.47) (2023-02-11)
+
+### [1.39.46](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.46) (2023-02-11)
+
+### [1.39.45](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.45) (2023-02-11)
+
+### [1.39.44](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.44) (2023-02-11)
+
 ### [1.39.69](https://github.com/LPZ0058/vue2-study/compare/v1.39.68...v1.39.69) (2023-02-11)
 
 

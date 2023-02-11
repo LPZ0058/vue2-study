@@ -31,7 +31,7 @@ function defineReactive(data: object, key: string, val: any) {
     new Observice(val)
   }
 
-  let dep = new Dep()
+  const dep = new Dep()
   Object.defineProperty(data, key, {
     enumerable: true,
     configurable: true,
