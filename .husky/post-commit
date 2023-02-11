@@ -4,7 +4,7 @@
 commit_head=$(git log --pretty=format:"%s" -1)
 commit_head_msg=${commit_head:0:15}
 
-if [ $commit_head != $commit_head ]
+if (( $commit_head_msg != $commit_head ))
 then
   # 不是standard version提交的，可以生成日志
   npm run update:log
