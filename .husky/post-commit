@@ -3,9 +3,8 @@
 
 commit_head=$(git log --pretty=format:"%s" -1)
 commit_head_msg=${commit_head:0:15}
-commit_ignore_msg="$chore(release):"
+commit_ignore_msg='chore(release):'
 
-echo "触发了post-commit"
 
 if [[ "$commit_head_msg" != "$commit_ignore_msg" ]]
 then
