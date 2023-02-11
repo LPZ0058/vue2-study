@@ -94,4 +94,4 @@
    1.  git rm --cached readme1.txt 删除readme1.txt的跟踪，并保留在本地
    2.  git rm -r --cached dir1  删除dir1目录，并保留在本地
    3.  git rm --f readme1.txt 删除readme1.txt的跟踪，并且删除本地文件
-10. 不要设置git回车转换，start-version在git操作时，如果配置文件（如package.json）的空格转换了，start-vesion会进行一次提交，但是提交的时候又会转换，于是循环提交....
+10. 不要再post-commit上挂载

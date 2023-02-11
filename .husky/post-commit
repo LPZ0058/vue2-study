@@ -3,7 +3,10 @@
 
 commit_head=$(git log --pretty=format:"%s" -1)
 commit_head_msg=${commit_head:0:15}
-commit_ignore_msg='$chore(release):'
+commit_ignore_msg="chore(release):"
+
+echo "$commit_head_msg"
+echo "$commit_ignore_msg"
 
 if [[ "$commit_head_msg" != "$commit_ignore_msg" ]]
 then
