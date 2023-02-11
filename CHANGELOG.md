@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.39.22](https://github.com/LPZ0058/vue2-study/compare/v1.39.21...v1.39.22) (2023-02-11)
+
+
+### Bug Fixes
+
+* fix: 尝试修复日志提交bug ([746f4f3](https://github.com/LPZ0058/vue2-study/commit/746f4f37d1fb9bb45d239f2b552728e9411765be))
+
 ### [1.39.21](https://github.com/LPZ0058/vue2-study/compare/v1.39.9...v1.39.21) (2023-02-11)
 
 ### [1.39.20](https://github.com/LPZ0058/vue2-study/compare/v1.39.9...v1.39.20) (2023-02-11)
