@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.39.43](https://github.com/LPZ0058/vue2-study/compare/v1.39.42...v1.39.43) (2023-02-11)
+
 ### [1.39.42](https://github.com/LPZ0058/vue2-study/compare/v1.39.41...v1.39.42) (2023-02-11)
 
 ### [1.39.41](https://github.com/LPZ0058/vue2-study/compare/v1.39.40...v1.39.41) (2023-02-11)
