@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.40.0](https://github.com/LPZ0058/vue2-study/compare/v1.39.117...v1.40.0) (2023-02-11)
+
+
+### Features
+
+* 增加ESLint检查typescript代码 ([118ef62](https://github.com/LPZ0058/vue2-study/commit/118ef629fb5bda9218230b3f4b7c71f916efe577))
+
 ### [1.39.117](https://github.com/LPZ0058/vue2-study/compare/v1.39.116...v1.39.117) (2023-02-11)
 
 
