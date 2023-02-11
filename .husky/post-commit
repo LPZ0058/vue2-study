@@ -1,8 +1,14 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo "111111111"
+
 echo "$1"
+
+echo "2222222222"
 
 git_log=$(git log --pretty=format:"%ad" -1)
 
 echo $git_log
+
+echo "333333333"
