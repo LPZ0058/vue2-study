@@ -2,7 +2,7 @@
  * @Author: 蓝胖子007 1829390613@qq.com
  * @Date: 2023-02-10 19:10:17
  * @LastEditors: 蓝胖子007 1829390613@qq.com
- * @LastEditTime: 2023-02-11 10:29:54
+ * @LastEditTime: 2023-02-11 12:14:09
  * @FilePath: \vue\vue2\note.md
  * @Description: 
  * 
@@ -94,4 +94,5 @@
    1.  git rm --cached readme1.txt 删除readme1.txt的跟踪，并保留在本地
    2.  git rm -r --cached dir1  删除dir1目录，并保留在本地
    3.  git rm --f readme1.txt 删除readme1.txt的跟踪，并且删除本地文件
-10. 不要再post-commit上挂载
+10. 在post-commit上挂载standard version命令时要注意，因为standard version在更新后会发出一条git提交，会再次触发post-commit钩子，因此在判断下才执行。现在的判断逻辑是通过git log --pretty=format:"%s" -1，获取最近一次提交的头部（-1 是最近一次），判断前面字符是不是"chore(release):"，若是则跳过
+11. 注意shell脚本里面的字符， ''是全引用，""则不是
