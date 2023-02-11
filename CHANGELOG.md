@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.39.55](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.55) (2023-02-11)
+
+
+### Bug Fixes
+
+* 尝试修复standard vsersion ([7e6f4ae](https://github.com/LPZ0058/vue2-study/commit/7e6f4aee3aee37f8cefd0c3c2c5876dab3424ae1))
+* fix 尝试修复bug ([9a3cd18](https://github.com/LPZ0058/vue2-study/commit/9a3cd1895dd49e43e1b4d2c44b2a30053b255ab8))
+* fix: 尝试修复standard vsersion ([7d8af15](https://github.com/LPZ0058/vue2-study/commit/7d8af1570ca958ddd5f4fda85c73197c2bbb20bb))
+* fix: fix: 尝试修复standard vsersion ([204c3ff](https://github.com/LPZ0058/vue2-study/commit/204c3ffba8774873abe861443dcf607b28a1644b))
+
+### [1.39.54](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.54) (2023-02-11)
+
+
+### Bug Fixes
+
+* 尝试修复standard vsersion ([7e6f4ae](https://github.com/LPZ0058/vue2-study/commit/7e6f4aee3aee37f8cefd0c3c2c5876dab3424ae1))
+* fix 尝试修复bug ([9a3cd18](https://github.com/LPZ0058/vue2-study/commit/9a3cd1895dd49e43e1b4d2c44b2a30053b255ab8))
+* fix: 尝试修复standard vsersion ([7d8af15](https://github.com/LPZ0058/vue2-study/commit/7d8af1570ca958ddd5f4fda85c73197c2bbb20bb))
+* fix: fix: 尝试修复standard vsersion ([204c3ff](https://github.com/LPZ0058/vue2-study/commit/204c3ffba8774873abe861443dcf607b28a1644b))
+
 ### [1.39.53](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.53) (2023-02-11)
 
 
