@@ -5,7 +5,7 @@ commit_head=$(git log --pretty=format:"%s" -1)
 commit_head_msg=${commit_head:0:15}
 commit_ignore_msg='$chore(release):'
 
-if (( $commit_head_msg != $commit_ignore_msg ))
+if [[ "$commit_head_msg" != "$commit_ignore_msg" ]]
 then
   # 不是standard version提交的，可以生成日志
   npm run update:log
