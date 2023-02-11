@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.41.0](https://github.com/LPZ0058/vue2-study/compare/v1.40.0...v1.41.0) (2023-02-11)
+
+
+### Features
+
+* 合并“增加ESLint检查typescript代码” ([042c4b9](https://github.com/LPZ0058/vue2-study/commit/042c4b946555bcf922d510af2335d24a6895c3de))
+
+### [1.39.69](https://github.com/LPZ0058/vue2-study/compare/v1.39.68...v1.39.69) (2023-02-11)
+
+
+### Bug Fixes
+
+* 日志循环更新bug修复完成 ([88c470b](https://github.com/LPZ0058/vue2-study/commit/88c470b0515d2abf17286a46d1d9a2f5fa633841))
+
+### [1.39.68](https://github.com/LPZ0058/vue2-study/compare/v1.39.67...v1.39.68) (2023-02-11)
+
+
+### Bug Fixes
+
+* bugfix ([2db2336](https://github.com/LPZ0058/vue2-study/commit/2db23365bc2e744ba27477ea2eac92ba4d9c985e))
+
+### [1.39.67](https://github.com/LPZ0058/vue2-study/compare/v1.39.66...v1.39.67) (2023-02-11)
+
+
+### Bug Fixes
+
+* bugfix ([e2d6115](https://github.com/LPZ0058/vue2-study/commit/e2d611524b63b98e47745567904cbf00f743d1e1))
+
+### [1.39.66](https://github.com/LPZ0058/vue2-study/compare/v1.39.65...v1.39.66) (2023-02-11)
+
+### [1.39.65](https://github.com/LPZ0058/vue2-study/compare/v1.39.64...v1.39.65) (2023-02-11)
+
+### [1.39.64](https://github.com/LPZ0058/vue2-study/compare/v1.39.63...v1.39.64) (2023-02-11)
+
+### [1.39.59](https://github.com/LPZ0058/vue2-study/compare/v1.39.58...v1.39.59) (2023-02-11)
+
+### [1.39.53](https://github.com/LPZ0058/vue2-study/compare/v1.39.52...v1.39.53) (2023-02-11)
+
+### [1.39.55](https://github.com/LPZ0058/vue2-study/compare/v1.39.43...v1.39.55) (2023-02-11)
+
+
+### Bug Fixes
+
+* 尝试修复standard vsersion ([7e6f4ae](https://github.com/LPZ0058/vue2-study/commit/7e6f4aee3aee37f8cefd0c3c2c5876dab3424ae1))
+* fix 尝试修复bug ([9a3cd18](https://github.com/LPZ0058/vue2-study/commit/9a3cd1895dd49e43e1b4d2c44b2a30053b255ab8))
+* fix: 尝试修复standard vsersion ([7d8af15](https://github.com/LPZ0058/vue2-study/commit/7d8af1570ca958ddd5f4fda85c73197c2bbb20bb))
+* fix: fix: 尝试修复standard vsersion ([204c3ff](https://github.com/LPZ0058/vue2-study/commit/204c3ffba8774873abe861443dcf607b28a1644b))
+
 ## [1.40.0](https://github.com/LPZ0058/vue2-study/compare/v1.39.117...v1.40.0) (2023-02-11)
 
 
