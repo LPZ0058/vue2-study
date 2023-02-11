@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -38,6 +39,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: `index.html`, //生成的文件名
       template: path.resolve(__dirname, `src/index.html`), //源文件的绝对路径
+    }),
+    new ESLintWebpackPlugin({
+      context: path.resolve(__dirname, "src"),
+      extensions: ["js", "ts"],
     }),
   ],
 };
