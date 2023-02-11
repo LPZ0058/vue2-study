@@ -1,14 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "111111111"
+commit_head=$(git log --pretty=format:"%s" -1)
+commit_head_msg=${commit_head:1:14}
 
-echo "$1"
-
-echo "2222222222"
-
-git_log=$(git log --pretty=format:"%ad" -1)
-
-echo $git_log
+echo $commit_head_msg
 
 echo "333333333"
