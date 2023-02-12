@@ -1,19 +1,13 @@
-/*
- * @Author: 蓝胖子007 1829390613@qq.com
- * @Date: 2023-02-09 14:36:01
- * @LastEditors: 蓝胖子007 1829390613@qq.com
- * @LastEditTime: 2023-02-10 13:12:34
- * @FilePath: \vue\vue2\src\Watcher.ts
- * @Description:
- *
- * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
- */
-/// <reference path = "./types/global.d.ts" />
-import parsePath from './utils/parsePath';
+
+/// <reference path = "../types/global.d.ts" />
+import { parsePath } from '../utils/lang';
 // import './types/global.d.ts';
 
+/**
+ * Watcher的作用，监听vm上指定的某属性（已经是响应式的了），以便在其发送改变时，调用回调函数
+ */
 export default class Watcher {
-  // vm应该是vue实例对象
+  // vm在vue中应该是vue实例对象
   vm: object
 
   /**
@@ -43,7 +37,7 @@ export default class Watcher {
     this.vm = vm;
     this.getter = parsePath(expOrFn);
     this.cb = cb;
-
+    this.value = this.get();
   }
   get() {
     window.target = this

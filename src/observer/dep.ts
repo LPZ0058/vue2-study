@@ -1,14 +1,5 @@
-import Watcher from './Watcher';
-/*
- * @Author: 蓝胖子007 1829390613@qq.com
- * @Date: 2023-02-09 14:29:51
- * @LastEditors: 蓝胖子007 1829390613@qq.com
- * @LastEditTime: 2023-02-09 22:21:21
- * @FilePath: \vue\vue2\src\Dep.ts
- * @Description: 
- * 
- * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
- */
+import Watcher from './watcher';
+
 export default class Dep {
   private subs: Array<Watcher>
   constructor() {
@@ -30,9 +21,12 @@ export default class Dep {
 
   notify() {
     const subs = this.subs.slice()
-    subs.forEach((item) => {
-      item.update()
-    })
+    // subs.forEach((item) => {
+    //   item.update()
+    // })
+    for(let i=0; i<subs.length; i++) {
+      subs[i].update()
+    }
   }
 }
 

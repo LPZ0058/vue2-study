@@ -1,5 +1,15 @@
 <!--
  * @Author: 蓝胖子007 1829390613@qq.com
+ * @Date: 2023-02-11 14:23:59
+ * @LastEditors: 蓝胖子007 1829390613@qq.com
+ * @LastEditTime: 2023-02-12 11:46:11
+ * @FilePath: \vue2\note.md
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+-->
+<!--
+ * @Author: 蓝胖子007 1829390613@qq.com
  * @Date: 2023-02-10 19:10:17
  * @LastEditors: 蓝胖子007 1829390613@qq.com
  * @LastEditTime: 2023-02-11 14:17:00
@@ -69,7 +79,7 @@
     2. git config core.autocrlf false  //禁用自动转换 
 
 7. 关于mocha测试框架以及chai作为断言库测试ts的问题：
-   1. 用命令行：对应的命令是：npx mocha --require ts-node/register .\src\tests\Observice.spec.ts。注意，--require ts-node/register 一定要写在前面
+   1. 用命令行：对应的命令是：npx mocha --require ts-node/register .\src\tests\Observer.spec.ts。注意，--require ts-node/register 一定要写在前面
    2. mocha支持用package.json去集成配置，如：
       ```json
       {
@@ -97,3 +107,26 @@
 10. 在post-commit上挂载standard version命令时要注意，因为standard version在更新后会发出一条git提交，会再次触发post-commit钩子，因此在判断下才执行。现在的判断逻辑是通过git log --pretty=format:"%s" -1，获取最近一次提交的头部（-1 是最近一次），判断前面字符是不是"chore(release):"，若是则跳过
 11. 注意shell脚本里面的字符， ''是全引用，""则不是
 12. VSCode的ESLint插件默认只读取当前项目根目录下的.eslintignore文件，不在根目录下的无效
+13. 在ts中，对于某个没有定义类型的对象，希望用中括号传入字符访问对应属性时会报错，因为希望传入number？方法就是给那个对象定义上类型，如：
+    ```ts
+      type arrayPrototypeType = Record<string,any>
+
+      const arrayPrototype:arrayPrototypeType = Array.prototype
+
+      const key: string = 'push'
+
+      const arrayValue1 = arrayPrototype[key]
+    ```
+    或者
+    ```ts
+      const arrayPrototype = Array.prototype
+
+      const key: string = 'push'
+
+      const arrayValue1 = (arrayPrototype as Record<string, any>)[key]
+14. 在ts的数组/对象中，直接访问__proto__是会报错的，提示不存在这个属性，一般的做法是把其断言成any，如：
+    ```ts
+      (value as any).__proto__ = arrayMethods
+    ```
+
+    
