@@ -34,7 +34,7 @@ module.exports = {
     ],
   },
   plugins: [
-    // 直接这样就可以了，这个插件会在生成的html中的head标签的最后一个子元素上插入一个script标签，引用webpack打包好的js文件，而且这个script是
+    // 直接这样就可以了，这个插件会在生成 的html中的head标签的最后一个子元素上插入一个script标签，引用webpack打包好的js文件，而且这个script是
     // 设置了defer，因此会等后面的dom生成完再执行，满足要求
     new HtmlWebpackPlugin({
       filename: `index.html`, //生成的文件名
@@ -43,6 +43,7 @@ module.exports = {
     new ESLintWebpackPlugin({
       context: path.resolve(__dirname, "src"),
       extensions: ["js", "ts"],
+      quiet: true // 不报告和处理warning
     }),
   ],
 };

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import Observer from '../observer/index';
-import Watcher from '../observer/watcher';
+import Observer from '../core/observer/index';
+import Watcher from '../core/observer/watcher';
 
 
 describe('测试Observer', function() {

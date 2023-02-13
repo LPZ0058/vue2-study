@@ -1,9 +1,13 @@
 import Watcher from './watcher';
 
+let uid = 0;
+
 export default class Dep {
   private subs: Array<Watcher>
+  public id: number | string
   constructor() {
     this.subs = []
+    this.id = uid++;
   }
   addSub(sub: Watcher) {
     this.subs.push(sub)
@@ -14,16 +18,11 @@ export default class Dep {
   }
 
   depend() {
-    if(window.target) {
-      this.addSub(window.target)
-    }
+    window.target?.addDep(this)
   }
 
   notify() {
     const subs = this.subs.slice()
-    // subs.forEach((item) => {
-    //   item.update()
-    // })
     for(let i=0; i<subs.length; i++) {
       subs[i].update()
     }

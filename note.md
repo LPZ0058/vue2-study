@@ -1,15 +1,5 @@
 <!--
  * @Author: 蓝胖子007 1829390613@qq.com
- * @Date: 2023-02-11 14:23:59
- * @LastEditors: 蓝胖子007 1829390613@qq.com
- * @LastEditTime: 2023-02-12 11:46:11
- * @FilePath: \vue2\note.md
- * @Description: 
- * 
- * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
--->
-<!--
- * @Author: 蓝胖子007 1829390613@qq.com
  * @Date: 2023-02-10 19:10:17
  * @LastEditors: 蓝胖子007 1829390613@qq.com
  * @LastEditTime: 2023-02-11 14:17:00
@@ -104,10 +94,10 @@
    1.  git rm --cached readme1.txt 删除readme1.txt的跟踪，并保留在本地
    2.  git rm -r --cached dir1  删除dir1目录，并保留在本地
    3.  git rm --f readme1.txt 删除readme1.txt的跟踪，并且删除本地文件
-10. 在post-commit上挂载standard version命令时要注意，因为standard version在更新后会发出一条git提交，会再次触发post-commit钩子，因此在判断下才执行。现在的判断逻辑是通过git log --pretty=format:"%s" -1，获取最近一次提交的头部（-1 是最近一次），判断前面字符是不是"chore(release):"，若是则跳过
-11. 注意shell脚本里面的字符， ''是全引用，""则不是
-12. VSCode的ESLint插件默认只读取当前项目根目录下的.eslintignore文件，不在根目录下的无效
-13. 在ts中，对于某个没有定义类型的对象，希望用中括号传入字符访问对应属性时会报错，因为希望传入number？方法就是给那个对象定义上类型，如：
+10.  在post-commit上挂载standard version命令时要注意，因为standard version在更新后会发出一条git提交，会再次触发post-commit钩子，因此在判断下才执行。现在的判断逻辑是通过git log --pretty=format:"%s" -1，获取最近一次提交的头部（-1 是最近一次），判断前面字符是不是"chore(release):"，若是则跳过
+11.  注意shell脚本里面的字符， ''是全引用，""则不是
+12.  VSCode的ESLint插件默认只读取当前项目根目录下的.eslintignore文件，不在根目录下的无效
+13.  在ts中，对于某个没有定义类型的对象，希望用中括号传入字符访问对应属性时会报错，因为希望传入number？方法就是给那个对象定义上类型，如：
     ```ts
       type arrayPrototypeType = Record<string,any>
 
@@ -124,9 +114,42 @@
       const key: string = 'push'
 
       const arrayValue1 = (arrayPrototype as Record<string, any>)[key]
-14. 在ts的数组/对象中，直接访问__proto__是会报错的，提示不存在这个属性，一般的做法是把其断言成any，如：
+14.  在ts的数组/对象中，直接访问__proto__是会报错的，提示不存在这个属性，一般的做法是把其断言成any，如：
     ```ts
       (value as any).__proto__ = arrayMethods
     ```
+15.  git将当前分支上修改的东西转移到新建分支的方法：
+    1.  我们不需要在A分支做commit,只需要在A分支新建B分支，然后切换过去，此时修改的东西就到了B分支，这个时候在B分支commit，那么这些修改保留在B分支上，再切换到A分支上会发现修改都没有保留下来
+    2.  使用git stash 将A分支暂存起来，然后在某一个分支（如master分支）新建一个分支B，然后在B分支上使用git stash pop 将修改弹出到B分支上，然后这些修改就在B分支上了
+16. 可以里js-dom模拟非浏览器下的dom，js-dom和mocha整合用[jsdom-global](https://www.coder.work/article/103442)
+17. vscode调试的launch.json的配置:[文档](https://code.visualstudio.com/Docs/editor/debugging)
+18. 在ts中，有的时候 某个变量不能断言成某个类，可以先断言成unknow在断言成目标类型，如： vm as unknown as Component
+19. ts导出重载函数的方法
+    ```ts
+      export function del<T>(array: T[], key: number): void
+      export function del(object: object, key: string | number): void
+      export function del(target: any[] | object, key: any) {
+        // ...
+      }
+    ```
 
-    
+20. 关于ts中的is这个谓语动词，它是用来收窄类型，[blog](https://barwe.cc/2022/08/22/ts-is)
+    一般情况下，变量的类型在定义时被确定，并且在使用时不会发生变化。
+    is使得变量在 js 层面被类型判断后，在 ts 层面同步更新其类型信息
+    我的理解：
+    ```ts
+      export function isUndef(v: any): v is undefined | null {
+        return v === undefined || v === null
+      }
+      // is 代表一个boolen类型的返回值，如果是函数的返回值是true，既：v是undefined | null ，反之则不是
+    ```
+
+21. ts中生命函数的类型时，如果要使用泛型，记得要在前面加个<T>，如：
+    ```ts
+      class  Component {
+        $set: <T>(
+          target: Array<T> | Record<string,any>,
+          key: number|string,
+          value: T) => T
+      }
+    ```

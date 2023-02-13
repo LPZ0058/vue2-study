@@ -26,5 +26,8 @@ module.exports = {
   rules: {
     "@typescript-eslint/triple-slash-reference": "off",
     // "@typescript-eslint/no-var-requires": "off",
+    // 运行给构造函数中的this起别名，因为vue类中一般都const vm = this
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/ban-types" : "off"
   },
 };

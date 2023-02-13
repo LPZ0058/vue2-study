@@ -9,7 +9,7 @@
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
 /**
- * 在这里封装一般方法
+ * 在这里封装和语言相关的一般方法
  */
 
 /**
@@ -58,4 +58,23 @@ export function isObject(obj: object): boolean{
  */
 export function hasOwn(obj:object, key:string):boolean {
   return Object.prototype.hasOwnProperty.call(obj, key)
+}
+
+/**
+ * 判读传入的值是否是数组有效的下标(1. 大于等于0 、2. 是个整数 、 3. 是个有限的值)
+ * @param val 传入的内容
+ * @returns
+ */
+export function isValidArrayIndex(val: any): boolean {
+  const num = Number.parseFloat(val)
+  return num >= 0 && num === Math.floor(num) && Number.isFinite(val)
+}
+
+/**
+ * 判断传入的值是否为空(undefined或者null)
+ * @param v
+ * @returns
+ */
+export function isUndef(v: any): v is undefined | null {
+  return v === undefined || v === null
 }

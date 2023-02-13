@@ -1,6 +1,6 @@
 import { arrayMethods } from "./array";
 import Dep from "./dep";
-import { def, hasOwn, isObject } from "../utils/lang";
+import { def, hasOwn, isObject } from "../../utils/lang";
 
 // 判断当前环境是否支持__proto__
 const hasProto = '__proto__' in {}
@@ -13,6 +13,8 @@ const hasProto = '__proto__' in {}
 export default class Observer {
   public value: object
   public dep: Dep
+  // TODO
+  // public vmCount: number // number of vms that have this object as root $data
 
   constructor(value: object) {
     this.value = value
@@ -58,9 +60,9 @@ export default class Observer {
   }
   // 将数组的元素转成响应式
   observerArray(items: any[]) {
-    items.forEach((item) => {
-      observe(item)
-    })
+    for(let i=0; i<items.length; i++) {
+      observe(items)
+    }
   }
 }
 
@@ -72,7 +74,7 @@ export default class Observer {
  * @param {*} val  属性的值
  * @return {*}
  */
-function defineReactive(data: object, key: string, val: any) {
+export function defineReactive(data: object, key: string, val: any) {
   const childOb = observe(val)
 
   const dep = new Dep()
@@ -82,7 +84,7 @@ function defineReactive(data: object, key: string, val: any) {
     get: function() {
       dep.depend()
 
-      if(childOb) { // 在这里收集数组的Watcher，但是好像对象的也收集到了
+      if(childOb) { // 在这里收集子数组/对象的Watcher。这样看，如果子属性是对象，那么不是维护了两个dep？
         childOb.dep.depend()
       }
       return val

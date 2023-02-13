@@ -1,4 +1,4 @@
-import Watcher from '../observer/watcher';
+import Watcher from '../core/observer/watcher';
 /*
  * @Author: 蓝胖子007 1829390613@qq.com
  * @Date: 2023-02-09 20:51:25
