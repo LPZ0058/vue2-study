@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.42.0](https://github.com/LPZ0058/vue2-study/compare/v1.41.0...v1.42.0) (2023-02-13)
+
+
+### Features
+
+* 1. 完成了$watch、$set、$delete 2. 大概完成了instance的搭建 ([56a1d91](https://github.com/LPZ0058/vue2-study/commit/56a1d915df8bd1fb8ac44035a5a06206c0f79906))
+* 1. 修复了前面watcher的错误 2. 增加非浏览器测试下的dom环境（js-dom）3.增加了vscode调试 4. 增加了observer对数组的支持 ([5fba6e5](https://github.com/LPZ0058/vue2-study/commit/5fba6e5d823b0259626acd360473f0158b91d60a))
+
 ## [1.41.0](https://github.com/LPZ0058/vue2-study/compare/v1.40.0...v1.41.0) (2023-02-11)
 
 
