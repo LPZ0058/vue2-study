@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.42.1](https://github.com/LPZ0058/vue2-study/compare/v1.42.0...v1.42.1) (2023-02-13)
+
+
+### Bug Fixes
+
+* 修复了launch.json 、 watcher的错误 ([9bbacc6](https://github.com/LPZ0058/vue2-study/commit/9bbacc69db97e2bd0cf0035fab241aa45bd2de57))
+
 ## [1.42.0](https://github.com/LPZ0058/vue2-study/compare/v1.41.0...v1.42.0) (2023-02-13)
 
 
