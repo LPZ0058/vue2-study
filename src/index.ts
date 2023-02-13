@@ -8,4 +8,4 @@
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
  */
-import './tests/Observer.spec'
+import './tests/observer.spec'

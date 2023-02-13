@@ -40,11 +40,12 @@ export default class Watcher {
    */
   constructor (vm: any, expOrFn: string | (() => any), cb: (value: any, oldValue: any) => any, option?:WatcherConstractorOptions) {
     this.vm = vm;
+    this.deps = [];
+    this.depIds = new Set();
+
     this.getter = typeof expOrFn === 'function' ? expOrFn :  parsePath(expOrFn);
     this.cb = cb;
     this.value = this.get();
-    this.deps = [];
-    this.depIds = new Set();
     if(option) {
       this.deep = !!option.deep
     } else{
