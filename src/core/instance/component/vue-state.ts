@@ -6,7 +6,7 @@ import { defineReactive } from '../../../core/observer/index';
 import Observer from '../../../core/observer/index';
 import { $WeatchOptions } from '../../../types/component/index';
 /**
- * StateMixinVue 是初始化完状态后得到的类
+ * StateMixinVue 是初始化完状态后得到的类(对应源码中stateMixin(Vue)后得到的Vue构造)
  */
 export default class StateMixinVue extends InitMixinVue {
   constructor(options: Record<string, any>) {

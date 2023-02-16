@@ -71,10 +71,61 @@ export function isValidArrayIndex(val: any): boolean {
 }
 
 /**
- * 判断传入的值是否为空(undefined或者null)
+ * 判断传入的值是否未定义(undefined或者null)
  * @param v
  * @returns
  */
 export function isUndef(v: any): v is undefined | null {
   return v === undefined || v === null
+}
+
+/**
+ * 判断传入的值是否已经定义(非undefined和null)
+ * @param v
+ * @returns
+ */
+export function isDef<T>(v: T): v is NonNullable<T> {
+  return v !== undefined && v !== null;
+}
+
+/**
+ * 判断窜入的是否是数组
+ */
+export const isArray = Array.isArray
+
+export function isTrue(v: any): boolean {
+  return v === true
+}
+
+export function isFalse(v: any): boolean {
+  return v === false
+}
+/**
+ * 判断传入的是否是原始类型(不包括undefined和null)
+ * @param v
+ * @returns
+ */
+export function isPrimitive(v: any): boolean {
+  return (typeof v === 'string' || typeof v === 'number' || typeof v === 'symbol' || typeof v === 'boolean')
+}
+
+/**
+ * 根据 字符串(元素1,元素2,..,元素n) 转成map(元素1: true, 元素2: true) 最后返回一个函数，这个函数传入 key，如果map有这个key则返回true，否则返回undefined
+ *
+ * @param str 字符串(key1,key1,..,keyn)
+ * @param expectsLowerCase 是否期待key转成小写
+ * @returns 一个函数，这个函数传入 key，如果str有这个key则返回true，否则返回undefined
+ */
+export function makeMap(
+  str: string,
+  expectsLowerCase?: boolean): (key: string) => true | undefined {
+    // 这里map的类型用Record<string, boolean>生命不好，因为这样后面函数的返回值就不是true | undefined了
+    const map = Object.create(null)
+    const list: Array<string> = str.split(',')
+
+    list.forEach((item, index) => {
+      map[item] = true
+    })
+
+    return expectsLowerCase ? key => map[key.toLowerCase()] : key => map[key]
 }

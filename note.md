@@ -153,3 +153,14 @@
           value: T) => T
       }
     ```
+22. 关于 NonNullable :
+    ``` txt
+    type NonNullable<T> = T & {}
+    Exclude null and undefined from T
+    ```
+    用法：
+    ```ts
+      export function isDef<T>(v: T): v is NonNullable<T> {
+        return v !== undefined && v !== null;
+      }
+    ```

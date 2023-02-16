@@ -20,7 +20,6 @@ export const arrayMethods = Object.create(arrayPrototype)
     configurable: true,
     writable: true,
     value: function mutator (...args: any[]) {
-      // TODO 下面进行响应处理
       const result = originMethod.apply(this, args)
       const ob = this.__ob__ as Observer
       // 如果是新增元素的方法，那么要把新增的源转成响应式的

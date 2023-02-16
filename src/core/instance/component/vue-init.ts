@@ -9,7 +9,7 @@ import { initState } from "../state";
 let uid = 0
 
 /**
- * InitMixinVue 是进行了初始化工作的到的类 (源码中initMixin(Vue)后得到的Vue构造)
+ * InitMixinVue 是进行了初始化工作的到的类 (对应源码中initMixin(Vue)后得到的Vue构造)
  */
 export default class InitMixinVue {
   protected _uid;
