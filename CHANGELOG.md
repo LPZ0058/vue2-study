@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.43.0](https://github.com/LPZ0058/vue2-study/compare/v1.42.1...v1.43.0) (2023-02-16)
+
+
+### Features
+
+* 大体完成patch最基本的功能 ([aef50cd](https://github.com/LPZ0058/vue2-study/commit/aef50cd3358f5d765ad793113ff98cd23e2b3f9e))
+
 ### [0.4.3](https://github.com/LPZ0058/vue2-study/compare/v1.42.0...v1.42.1) (2023-02-13)
 
 
@@ -42,5 +49,3 @@ All notable changes to this project will be documented in this file. See [standa
 * 完善commitizen的git提交（通过cz-customizable） ([a78ac8d](https://github.com/LPZ0058/vue2-study/commit/a78ac8d437d25dd66cac2f673105fb1dcb2c52d5))
 * git提交规范化 ([56c89ab](https://github.com/LPZ0058/vue2-study/commit/56c89abf8bd059f19508fa058ee5a29a1e68c93a))
 * 初步完成Observice 、 Watcher、等的编写，跑通了测试([44678f4](https://github.com/LPZ0058/vue2-study/commit/44678f49f3492b10f063d502b408907ad820787a))
-
-
