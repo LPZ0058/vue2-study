@@ -28,6 +28,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "inquirer": "^8.2.5",
     "ts-node": "^10.9.1"
   },
   "mocha": {
@@ -39,6 +40,9 @@
     "reporter": [
       "mochawesome"
     ]
+  },
+  "bin": {
+    "git-st": "./bin/git-st/git-st"
   },
   "name": "vue2-study",
   "description": "<!--\r  * @Author: 蓝胖子007 1829390613@qq.com\r  * @Date: 2023-02-09 20:35:44\r  * @LastEditors: 蓝胖子007 1829390613@qq.com\r  * @LastEditTime: 2023-02-10 12:22:42\r  * @FilePath: \\vue\\vue2\\README.md\r  * @Description: \r  * \r  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. \r -->\r **测试**",

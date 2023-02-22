@@ -164,3 +164,29 @@
         return v !== undefined && v !== null;
       }
     ```
+
+23. 捣鼓了下git cz的原理：
+    1.  原理：它并不是设置了git的自定义命令，在.gitconfig下没用发现对应的[alias]设置。应该是利用了：[Git遵循命名约定git-<subcmd>自动解析PATH中可执行文件中的子命令。 这些子命令可以用git <subcmd>执行](https://www.javacodegeeks.com/2018/04/custom-git-subcommands.html)。具体的做法看作者的[回答](https://github.com/commitizen/cz-cli/issues/166)。
+    2.  实践：希望能够做一个git stash 快速生成save信息的类似git cz的命令，git st：
+        1. 实践过程： 首先在任一位置，这里在项目的bin目录下，新建文件 git-st 和 git-st.cmd文件，然后在package.json中的bin字段上添上
+            "git-st":"./bin/git-st" 字段，然后执行npm link命令进行连接，最后按作者的思路书写
+            git-st文件：
+            ```shell
+              #!/usr/bin/env node
+              require('./git-st.js');
+            ```
+            git-st.cmd文件：
+            ```shell
+              @node "%~dpn0" %*
+            ```
+            最后，在git-st.js文件中写上希望的代码就OK了
+        2. 上面实践的原理解析：
+           1. 关于npm 的全局安装：npm的全局安装其实是找到对应包进行下载，然后检测下载的包中的package.json文件下的bin字段，将里面的内容进行链接，以上面的
+              "git-st":"./bin/git-st" 为例，首先它会在 某个目录(可以用npm config get prefix查看)中创建一个软链，它的名字就是git-st(既：bin下属性的key)，然后它指向./bin/git-st指向的可执行文件。而上面的目录会被设置在环境变量的Path中。因此我们在终端中直接输入git-st就能运行那个可执行文件了
+           2. 关于npm link，文档的描述为：
+              ```text
+                First, npm link in a package folder with no arguments will create a symlink in the global folder {prefix}/lib/node_modules/<package> that links to the package where the npm link command was executed. It will also link any bins in the package to {prefix}/bin/{name}. Note that npm link uses the global prefix (see npm prefix -g for its value).
+              ```
+              因此它会像全局安装一样，直接找当前项目的package.json下的bin字段，像全局安装那样设置symlink（这也是网上很多blog说用npm link模拟全局安装的由来）
+           3. 由此，上面实践后，在终端输入git st，git会寻找git-st可执行文件，刚好PATH中有(因为npm link过了)，因此会找到./bin/git-st指向的指向文件，然后执行。
+           4. 可以使用inquirer去实现命令行的问答交互

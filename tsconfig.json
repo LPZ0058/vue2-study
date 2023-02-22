@@ -11,9 +11,9 @@
     "include": [
       "./src/**/*"
     ],
-  //  "exclude": [
-  //    "./src/hello/**/*"
-  //  ]
+    "exclude": [
+      "./bin/**/*"
+    ],
 
     /*
       compilerOptions 编译器的选项
