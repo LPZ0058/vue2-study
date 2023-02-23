@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:debugger:chrome",
+			"problemMatcher": [],
+			"label": "build:debugger:chrome",
+			"detail": "构建chrome的debugger",
+		}
+	]
+}

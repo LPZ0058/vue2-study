@@ -53,7 +53,8 @@
     "test:brower": "webpack-dev-server",
     "prepare": "husky install",
     "cz": "git-cz",
-    "update:log": "standard-version"
+    "update:log": "standard-version",
+    "build:debugger:chrome":"webpack -c ./src/debugger/webpack.config.js"
   },
   "config": {
     "commitizen": {

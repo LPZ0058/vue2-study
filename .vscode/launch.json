@@ -17,6 +17,19 @@
       "args": [
         "./src/tests/observer.spec.ts"
       ]
+    },
+           //这一段是Debugger for chrome的配置
+    {
+      "name": "使用本机 Chrome 调试 ",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceRoot}/src/debugger/build/build.html",
+      "runtimeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", // 改成您的 Chrome 安装路径
+      // "sourceMaps": true,
+      "webRoot": "${workspaceRoot}",
+      "preLaunchTask":"build:debugger:chrome",
+      // "userDataDir": "${tmpdir}",
+      "port": 5433
     }
   ]
 }

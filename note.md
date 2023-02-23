@@ -190,3 +190,7 @@
               因此它会像全局安装一样，直接找当前项目的package.json下的bin字段，像全局安装那样设置symlink（这也是网上很多blog说用npm link模拟全局安装的由来）
            3. 由此，上面实践后，在终端输入git st，git会寻找git-st可执行文件，刚好PATH中有(因为npm link过了)，因此会找到./bin/git-st指向的指向文件，然后执行。
            4. 可以使用inquirer去实现命令行的问答交互
+
+24. 设置chrome调试的时候，如果希望能打断点(自己写的ts文件在webpack的HTML插件注入后能有断点追踪)注意：
+    1. launch.js的"webRoot": "${workspaceRoot}", 必须这样，别搞其他的。不然断点会失效（不知道为什么，只是VSCode的debug doctor提示的）。
+    2. webpack.config.json记得设置devtool: 'inline-source-map'

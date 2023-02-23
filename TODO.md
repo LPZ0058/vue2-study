@@ -1,4 +1,5 @@
 - [x] 增加浏览器环境测试
+- [x] 为Vue的html解析器增加本地chrome浏览器断点调试
 - [ ] 完善Observer(数组的响应式)
 - [ ] 实现vm.$watch、vm.$set，vm.$delete等
 - [ ] 虚拟dom相关

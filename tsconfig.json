@@ -73,7 +73,9 @@
       "noImplicitThis": false,
 
       // 严格的检查空值
-      "strictNullChecks": true
+      "strictNullChecks": true,
+      // 开启映射
+      // "sourceMap":true
 
 
     }
