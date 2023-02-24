@@ -9,6 +9,7 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "chai": "^4.3.7",
+    "commander": "^10.0.0",
     "commitizen": "^4.3.0",
     "cz-customizable": "^6.3.0",
     "eslint": "^8.34.0",
@@ -54,7 +55,7 @@
     "prepare": "husky install",
     "cz": "git-cz",
     "update:log": "standard-version",
-    "build:debugger:chrome":"webpack -c ./src/debugger/webpack.config.js"
+    "build:debugger:chrome": "webpack -c ./src/debugger/webpack.config.js"
   },
   "config": {
     "commitizen": {
