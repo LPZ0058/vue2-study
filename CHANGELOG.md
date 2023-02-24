@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.45.0](https://github.com/LPZ0058/vue2-study/compare/v1.44.0...v1.45.0) (2023-02-24)
+
+
+### Features
+
+* 为Vue的html解析器增加本地chrome浏览器断点调试 ([288b4ed](https://github.com/LPZ0058/vue2-study/commit/288b4ed493e4b079743a01e0085cf90e8972d45b))
+* feat: 增加git st sel ([4d90aab](https://github.com/LPZ0058/vue2-study/commit/4d90aab9bbf53000537f8ee9f8c76f2aec60846c))
+
 ## [1.44.0](https://github.com/LPZ0058/vue2-study/compare/v1.43.1...v1.44.0) (2023-02-22)
 
 
