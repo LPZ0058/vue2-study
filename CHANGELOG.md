@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.46.0](https://github.com/LPZ0058/vue2-study/compare/v1.45.0...v1.46.0) (2023-03-01)
+
+
+### Features
+
+* 优化git st sel，增加show 和 show -p的选项 ([00361b6](https://github.com/LPZ0058/vue2-study/commit/00361b6eb21f79c76a2db84b3d7ae347e06da639))
+
 ## [1.45.0](https://github.com/LPZ0058/vue2-study/compare/v1.44.0...v1.45.0) (2023-02-24)
 
 
