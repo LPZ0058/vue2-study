@@ -1,3 +1,5 @@
+const { Module } = require("webpack");
+
 Date.prototype.format = function(fmt){
   var o = {
     "M+" : this.getMonth()+1,                 //月份
@@ -22,3 +24,9 @@ Date.prototype.format = function(fmt){
 
   return fmt;
 }
+
+function getString(val){
+  return Buffer.isBuffer(val) ? val.toString() : typeof(val) === 'string' ? val : ''
+}
+
+module.exports.getString = getString

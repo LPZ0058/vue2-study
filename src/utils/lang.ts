@@ -129,3 +129,12 @@ export function makeMap(
 
     return expectsLowerCase ? key => map[key.toLowerCase()] : key => map[key]
 }
+
+// 一个只会返回false的函数,一般用于那些is..., must... 的谓语判断函数的默认值
+export const no = (a?: any, b?: any, c?: any) => false
+
+/**
+ * 能够被用于html的tag,属性等的合法的字符(大小写字母以及一些合法的unicode字符)
+ */
+export const unicodeRegExp =
+  /a-zA-Z\u00B7\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u037D\u037F-\u1FFF\u200C-\u200D\u203F-\u2040\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD/

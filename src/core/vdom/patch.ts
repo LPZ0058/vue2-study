@@ -16,11 +16,17 @@ export function createPatchFunction(backend:{nodeOps:NodeOps}) {
    * patchVNode的作用是根据vnode调整oldVnode对应的DOM元素
    * @param oldVnode
    * @param vnode
+   * @param ownerArray vnode 所属的兄弟列表 ，，
+   * @param index vnode 所属的下标
    * @returns
    */
-  function patchVnode(oldVnode,vnode) {
+  function patchVnode(oldVnode,vnode,ownerArray?,index?) {
     if (oldVnode === vnode) {
       return
+    }
+    if (isDef(vnode.elm) && isDef(ownerArray)) {
+      // clone reused vnode
+      vnode = ownerArray[index] = cloneVNode(vnode)
     }
     // 为新虚拟节点的elm赋值
     const elm = (vnode.elm = oldVnode.elm)
@@ -246,23 +252,23 @@ export function createPatchFunction(backend:{nodeOps:NodeOps}) {
       } else if (isUndef(oldEndVnode)) {
         oldEndVnode = oldCh[--oldEndIdx]
       } else if (sameVnode(oldStartVnode, newStartVnode)) {
-        patchVnode(oldStartVnode,newStartVnode)
+        patchVnode(oldStartVnode,newStartVnode,newCh,newEndIdx)
         oldStartVnode = oldCh[++oldStartIdx]
         newStartVnode = newCh[++newStartIdx]
       } else if (sameVnode(oldEndVnode, newEndVnode)) {
-        patchVnode(oldEndVnode,newEndVnode)
+        patchVnode(oldEndVnode,newEndVnode,newCh,newEndIdx)
         oldEndVnode = oldCh[--oldEndIdx]
         newEndVnode = newCh[--newEndIdx]
       } else if (sameVnode(oldStartVnode, newEndVnode)) {
         // Vnode moved right
-        patchVnode(oldStartVnode,newEndVnode)
+        patchVnode(oldStartVnode,newEndVnode,newCh,newEndIdx)
         // 这个是将旧前的DOM节点放到旧后的下一个节点前(既 未处理节点的最后)，结合整个算法易想
         nodeOps.insertBefore(parentElm,oldStartVnode.elm,nodeOps.nextSibling(oldEndVnode.elm))
         oldStartVnode = oldCh[++oldStartIdx]
         newEndVnode = newCh[--newEndIdx]
       } else if (sameVnode(oldEndVnode, newStartVnode)) {
         // Vnode moved left
-        patchVnode(oldEndVnode,newStartVnode,)
+        patchVnode(oldEndVnode,newStartVnode,newCh,newEndIdx)
         nodeOps.insertBefore(parentElm, oldEndVnode.elm, oldStartVnode.elm)
         oldEndVnode = oldCh[--oldEndIdx]
         newStartVnode = newCh[++newStartIdx]
@@ -280,18 +286,18 @@ export function createPatchFunction(backend:{nodeOps:NodeOps}) {
         // 如果在旧VNode中没有找到，那么意味着当前的newVNode在旧节点列表中没有对应的，因此新建该节点并插入直接在"全部未处理节点"前
         if (isUndef(idxInOld)) {
           // New element
-          createElm(newStartVnode,parentElm,oldStartVnode.elm)
+          createElm(newStartVnode,parentElm,oldStartVnode.elm,newCh,newStartIdx)
         } else { // 如果在旧VNode中找到了 ...
           vnodeToMove = oldCh[idxInOld]
           if (sameVnode(vnodeToMove, newStartVnode)) {
-            patchVnode(vnodeToMove,newStartVnode)
+            patchVnode(vnodeToMove,newStartVnode,newCh,newEndIdx)
             // 将这种情况下处理过的旧节点的位置直接置为undefined，避免重复
             oldCh[idxInOld] = undefined
             // 移动位置，因为它对应的是newStart，因此移动到“未处理的DOM节点之前”
             nodeOps.insertBefore(parentElm,vnodeToMove.elm,oldStartVnode.elm)
           } else {
             // same key but different element. treat as new element
-            createElm(newStartVnode,parentElm,oldStartVnode.elm,)
+            createElm(newStartVnode,parentElm,oldStartVnode.elm,newCh,newStartIdx)
           }
         }
         newStartVnode = newCh[++newStartIdx]
