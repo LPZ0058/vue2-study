@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.47.0](https://github.com/LPZ0058/vue2-study/compare/v1.46.0...v1.47.0) (2023-03-07)
+
+
+### Features
+
+* 解析了事件/生命周期/全局API的大部分源码 ([17a5970](https://github.com/LPZ0058/vue2-study/commit/17a5970b290a718a8988cd9bd8392a2a55f01665))
+
 ## [1.46.0](https://github.com/LPZ0058/vue2-study/compare/v1.45.0...v1.46.0) (2023-03-01)
 
 
