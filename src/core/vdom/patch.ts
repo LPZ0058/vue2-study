@@ -1,7 +1,7 @@
-import { isDef, isUndef, isArray, isTrue, isPrimitive } from '../../utils/lang';
+import { isDef, isUndef, isArray, isTrue, isPrimitive } from '../util/lang';
 import { NodeOps } from "../../types/platforms/web/runtime/node-option"
 import VNode, { cloneVNode } from './vnode';
-import { isTextInputType, isUnknownElement } from '../../platforms/web/utils/element';
+import {isUnknownElement } from '../../platforms/web/utils/element';
 
 /**
  * // TODO 之所以这样是为了跨平台，至于如何操作，以后研究
@@ -212,9 +212,9 @@ export function createPatchFunction(backend:{nodeOps:NodeOps}) {
    * @param elm
    * @returns
    */
-  function emptyNodeAt(elm) {
-    return new VNode(nodeOps.tagName(elm).toLowerCase(), {}, [], undefined, elm)
-  }
+  // function emptyNodeAt(elm) {
+  //   return new VNode(nodeOps.tagName(elm).toLowerCase(), {}, [], undefined, elm)
+  // }
 
   /**
    * 更新子节点(面式典中典............)

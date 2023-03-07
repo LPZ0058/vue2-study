@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
+const webpack = require("webpack");
+const version = process.env.VERSION || require('../package.json').version
 
 module.exports = {
   mode: "development",
@@ -13,7 +15,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname), // 指定服务器当前域面资源的内容
     },
-    // TODO 原理不明白，推测： 这个打开浏览器后会访问那个端口，然后会找index.html那种文件，而下面的HtmlWebpackPlugin刚好生成了index.html?
+    // TODO 原理不明白，推测： 这个打开浏览器后会访问那个端口，然后会找index.html那种文件，而下面的HtmlWebpackPlugin刚好生成了index.html，因此达成目标
     open: true, // 自动打开浏览器
     port: 9001, // 端口号
   },
@@ -45,5 +47,10 @@ module.exports = {
       extensions: ["js", "ts"],
       quiet: true // 不报告和处理warning
     }),
+    // 使用webpack.DefinePlugin在编译阶段替换变量
+    new webpack.DefinePlugin({
+      __DEV__: process.env.NODE_ENV !== 'production',
+      __VERSION__: version
+    })
   ],
 };

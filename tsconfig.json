@@ -9,7 +9,7 @@
 
   */
     "include": [
-      "./src/**/*"
+      "./src/**/*",
     ],
     "exclude": [
       "./bin/**/*"
@@ -40,6 +40,8 @@
 
       // outDir 用来指定编译后文件所在的目录
     "outDir": "./dist",
+    "baseUrl": ".",
+    "moduleResolution": "node",
 
       // 将代码合并为一个文件
       // 设置outFile后，所有的全局作用域中的代码会合并到同一个文件中
@@ -52,31 +54,39 @@
       // 是否检查js代码是否符合语法规范，默认是false
   //    "checkJs": true,
       // 是否移除注释
-      "removeComments": true,
-      // 不生成编译后的文件
-      "noEmit": false,
+    "removeComments": true,
+    // 不生成编译后的文件
+    "noEmit": false,
+    // "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
 
+    // 当有错误时不生成编译后的文件
+    "noEmitOnError": true,
 
-      // 当有错误时不生成编译后的文件
-      "noEmitOnError": true,
+    // 所有严格检查的总开关
+    "strict": true,
 
-      // 所有严格检查的总开关
-      "strict": true,
+    // 用来设置编译后的文件是否使用严格模式，默认false
+    "alwaysStrict": true,
 
-      // 用来设置编译后的文件是否使用严格模式，默认false
-      "alwaysStrict": true,
+    // 不允许隐式的any类型,既：如下：参数 xx 隐式具有“any”类型不会报错了
+    "noImplicitAny": false,
 
-      // 不允许隐式的any类型,既：如下：参数 xx 隐式具有“any”类型不会报错了
-      "noImplicitAny": false,
+    // 不允许不明确类型的this,
+    "noImplicitThis": false,
 
-      // 不允许不明确类型的this,
-      "noImplicitThis": false,
-
-      // 严格的检查空值
-      "strictNullChecks": true,
-      // 开启映射
-      // "sourceMap":true
-
+    // 严格的检查空值
+    "strictNullChecks": true,
+    // 开启映射
+    // "sourceMap":true
+    // TODO 设置了tsconfig.ts的paths后在import/export的路径上可以这样用 如：export * from 'shared/util'
+    "paths":{
+      "shared/*": ["src/shared/*"],
+      "core/*": ["src/core/*"],
+      "types/*": ["src/types/*"],
+    }
 
     }
   }

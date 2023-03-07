@@ -1,6 +1,5 @@
-import { isObject } from '../../utils/lang';
+import { isObject } from '../util/lang';
 import Observer from './index';
-import Dep from './dep';
 
 /**
  * 这个是收集要响应的dep的集合，用Set是为了去重，主要是为了保障对于同一引用类型，
@@ -24,7 +23,7 @@ function _traverse(val, seen: Set<string | number>) {
 
   if(val.__ob__) {
     const depId = (val.__ob__ as Observer).dep.id;
-    if (seen.has(depId)) { // 如果当前对象以及被_traverse过了，那么这层递归就可以结束了
+    if (seen.has(depId)) { // 如果当前对象已经被_traverse过了，那么这层递归就可以结束了
       return;
     }
     seen.add(depId)
@@ -32,7 +31,7 @@ function _traverse(val, seen: Set<string | number>) {
   // 对于数组/对象，的每一个属性都读取一遍，让他们可以收集当前的watcher
   if(isArray) {
     i = val.length
-    while(i--) _traverse(val[i], seenObject) // 这里的val[i]和下面的val[keys[i]]读取了属性，会让对于的Dep收集到watcher
+    while(i--) _traverse(val[i], seenObject) // 这里的val[i]和下面的val[keys[i]]读取了属性，会让对应的Dep收集到watcher
   } else {
     keys  = Object.keys(val)
     i = keys.length

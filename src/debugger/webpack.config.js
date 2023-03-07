@@ -1,6 +1,7 @@
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 module.exports = {
   // devtool: 'eval-source-map',
   mode: "development",
@@ -42,5 +43,8 @@ module.exports = {
       extensions: ["js", "ts"],
       quiet: true // 不报告和处理warning
     }),
+    new webpack.DefinePlugin({
+      __DEV__: process.env.NODE_ENV !== 'production'
+    })
   ],
 };

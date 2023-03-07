@@ -1,6 +1,6 @@
 import { HTMLParserOptions } from "../../types/compolier/html-parser"
 import { ASTAttr } from "../../types/compolier/index"
-import { makeMap, unicodeRegExp } from "../../utils/lang"
+import { makeMap, unicodeRegExp } from "../../core/util/lang"
 import { canBeLeftOpenTag, isNonPhrasingTag, isUnaryTag } from "./utils"
 
 export const isPlainTextElement = makeMap('script,style,textarea', true)

@@ -1,4 +1,4 @@
-import { makeMap } from "../../utils/lang"
+import { makeMap } from "../../core/util/lang"
 
 // 判断是否是自闭合标签
 export const isUnaryTag = makeMap(

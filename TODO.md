@@ -1,8 +1,5 @@
 - [x] 增加浏览器环境测试
 - [x] 为Vue的html解析器增加本地chrome浏览器断点调试
-- [x] 完善Observer(数组的响应式)
-- [x] 实现vm.$watch、vm.$set，vm.$delete等
 - [x] 模仿git cz 添加了git st 管理git stash
-- [ ] 虚拟dom相关
 - [ ] 浏览器环境进行mocha测试时报告时生成的代码是webpack转换过后的，希望能生成转换前的（webpack文档中提到mocha-webpack，可以尝试下，目前的整合太简单了）
 - [ ] 更完善的测试。(可以学习vue2源码上的测试，至少尽量靠近)

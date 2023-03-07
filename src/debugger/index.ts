@@ -1,5 +1,6 @@
 import { parseHTML } from "../compiler/parser/html-parser";
-import { tagName } from '../platforms/web/runtime/node-option';
+// import { tagName } from '../platforms/web/runtime/node-option';
+import '../core/util/debug'
 
 
 parseHTML(`  <div>

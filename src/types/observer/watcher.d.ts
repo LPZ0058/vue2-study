@@ -1,5 +1,5 @@
 
-export interface WatcherConstractorOptions {
+export interface WatcherOptions {
   deep?: boolean
   user?: boolean
   lazy?: boolean

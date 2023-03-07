@@ -1,5 +1,5 @@
-import { makeMap } from "../../../utils/lang";
-import { inBrowser } from '../../../utils/env';
+import { makeMap } from "../../../core/util/lang";
+import { inBrowser } from '../../../core/util/env';
 
 export const isHTMLTag = makeMap(
   'html,body,base,head,link,meta,style,title,' +
